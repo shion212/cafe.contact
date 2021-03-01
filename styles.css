@@ -1,4 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+.component {
+    width: 50vw;
+    height: 50vh;
+    background: rgba(255, 0, 0, 0.25)
+  }
+  html {
+    font-size: 16px;
+   
+    @media (min-width: 600px) {
+      font-size: 18px;
+    }
+   
+    @media (min-width: 800px) {
+      font-size: 20px;
+    }
+  }
+   
+  html {
+    font-size: 16px;
+   
+    @media (min-width: 800px) {
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width:961px) {
+      /*pc用のcssを記述*/
+      }
+        
+      @media only screen and (min-width:376px) and (max-width:960px) {
+      /*tablet用のcssを記述*/
+      }
+       
+      @media screen and (max-width:375px) {
+      /*スマホ用のcssを記述*/
+      }
+      img {max-width:100%; width /***/:auto; /*IE8用ハック*/} /*画像サイズが横幅に合わせて可変します*/
+  
+      @media screen and (min-width:376px) {
+          .sp_contents {display:none;} /*横幅376px以上では表示しない*/
+          }
+          @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
 body {
   font-family: 'Open Sans', sans-serif;
@@ -241,3 +281,4 @@ body {
   text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
+
